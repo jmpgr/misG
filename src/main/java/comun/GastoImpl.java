@@ -12,9 +12,14 @@ public void setAutorizado(boolean autorizado) {
 	this.autorizado = autorizado;
 }
 
-@Override
-public boolean getAutorizado() {
+
+public boolean isAutorizado() {
 	return autorizado;
+}
+
+@Override
+public Usuario getUsuarioAutorizado() {
+	return getUsuarioAutorizado();
 }
 
 }

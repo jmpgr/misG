@@ -7,11 +7,11 @@ public class MovimientoImpl implements Movimiento {
 	
 	
 	private Long idMovimiento;
-	private Usuario uauario;
+	private Cuenta cuenta;
 	private LocalDate fecha;
 	private String concepto;
 	private double importe;
-	private List<Categoria> categorias;
+	private List<CategoriaImpl> categorias;
 	
 	
 	
@@ -24,11 +24,13 @@ public class MovimientoImpl implements Movimiento {
 	public void setIdMovimiento(Long idMovimiento) {
 		this.idMovimiento = idMovimiento;
 	}
-	public Usuario getUauario() {
-		return uauario;
+
+
+	public Cuenta getCuenta() {
+		return cuenta;
 	}
-	public void setUauario(Usuario uauario) {
-		this.uauario = uauario;
+	public void setCuenta(Cuenta cuenta) {
+		this.cuenta = cuenta;
 	}
 	public LocalDate getFecha() {
 		return fecha;
@@ -48,10 +50,10 @@ public class MovimientoImpl implements Movimiento {
 	public void setImporte(double importe) {
 		this.importe = importe;
 	}
-	public List<Categoria> getCategorias() {
+	public List<CategoriaImpl> getCategorias() {
 		return categorias;
 	}
-	public void setCategorias(List<Categoria> categorias) {
+	public void setCategorias(List<CategoriaImpl> categorias) {
 		this.categorias = categorias;
 	}
 

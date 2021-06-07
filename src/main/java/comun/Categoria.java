@@ -1,21 +1,7 @@
 package comun;
 
-public class Categoria {
-	private String nombreCategoria;
+public interface Categoria {
 	
-	
+	Categoria  getCategoria();
 
-	public Categoria() {
-		super();
-	}
-
-	public String getNombreCategoria() {
-		return nombreCategoria;
-	}
-
-	public void setNombreCategoria(String nombreCategoria) {
-		this.nombreCategoria = nombreCategoria;
-	}
-
-	
 }

@@ -1,10 +1,17 @@
 package comun;
 
+
+
 public interface Gasto {
-	default Usuario  getUsuarioAutorizado(){
-		return null;
-	}
 	
-	boolean getAutorizado();
+	
+	default boolean isAutorizado() {
+			if (getUsuarioAutorizado() != null);
+			return true;
+		}
+	
+	Usuario  getUsuarioAutorizado();
+
+	
 
 }
